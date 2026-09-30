@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мои обращения — Help Desk</title>
+</head>
+<body>
+<a href="#main-content">Перейти к основному содержимому</a>
+
+<header>
+    <img src="assets/images/help-desk.svg"
+         alt="Логотип службы поддержки Help Desk"
+         width="32" height="32">
+    <p><strong>Help Desk</strong></p>
+</header>
+
+<nav aria-label="Основная навигация">
+    <ul>
+        <li><a href="index.html" aria-current="page">Обращения</a></li>
+        <li><a href="create-ticket.html">Создать обращение</a></li>
+    </ul>
+</nav>
+
+<main id="main-content">
+    <h1>Мои обращения</h1>
+
+    <button type="button"
+            id="filter-toggle"
+            aria-expanded="false"
+            aria-controls="filters">
+        Показать фильтры
+    </button>
+
+    <div id="filters" hidden>
+        <p>
+            <label for="status-filter">Статус</label>
+            <select id="status-filter">
+                <option value="all">Все</option>
+                <option value="new">Новые</option>
+                <option value="progress">В работе</option>
+            </select>
+        </p>
+    </div>
+
+    <section aria-labelledby="open-tickets-heading">
+        <h2 id="open-tickets-heading">Открытые обращения</h2>
+
+        <article>
+            <h3>Не открывается личный кабинет</h3>
+            <p><strong>Статус:</strong> В работе</p>
+            <p>После входа отображается пустая страница.</p>
+            <a href="ticket-101.html">Открыть обращение №101</a>
+        </article>
+
+        <article>
+            <h3>Не приходит письмо для сброса пароля</h3>
+            <p><strong>Статус:</strong> Новое</p>
+            <p>Письмо не приходит на почту уже более часа.</p>
+            <a href="ticket-102.html">Открыть обращение №102</a>
+        </article>
+
+        <article>
+            <h3>Не работает Wi-Fi в общежитии №3</h3>
+            <p><strong>Статус:</strong> В работе</p>
+            <p>Соединение постоянно обрывается вечером.</p>
+            <a href="ticket-103.html">Открыть обращение №103</a>
+        </article>
+    </section>
+
+    <section aria-labelledby="help-heading">
+        <h2 id="help-heading">Справка</h2>
+        <p>Перед созданием нового обращения проверьте, нет ли похожего в списке.</p>
+        <p>Всего открытых обращений: <strong>3</strong>.</p>
+    </section>
+</main>
+
+<footer>
+    <p>Учебный проект Help Desk</p>
+</footer>
+
+<script>
+    const button = document.querySelector('#filter-toggle');
+    const filters = document.querySelector('#filters');
+
+    button.addEventListener('click', () => {
+        const isOpen = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!isOpen));
+        filters.hidden = isOpen;
+        button.textContent = isOpen ? 'Показать фильтры' : 'Скрыть фильтры';
+    });
+</script>
+</body>
+</html>

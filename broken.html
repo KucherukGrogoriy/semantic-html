@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Исправленная страница — Help Desk</title>
+</head>
+<body>
+<header>
+    <img src="assets/images/help-desk.svg"
+         alt="Логотип службы поддержки Help Desk"
+         width="32" height="32">
+    <p><strong>Help Desk</strong></p>
+</header>
+
+<nav aria-label="Основная навигация">
+    <ul>
+        <li><a href="index.html">Обращения</a></li>
+        <li><a href="create-ticket.html">Создать обращение</a></li>
+    </ul>
+</nav>
+
+<main id="main-content">
+    <h1>Тестовая страница (исправленная)</h1>
+
+    <form action="#" method="post">
+        <div>
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+        </div>
+
+        <div>
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+        </div>
+
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+
+        <p>
+            <strong>Важно:</strong> <em>проверьте данные</em>
+        </p>
+    </form>
+</main>
+
+<footer>
+    <p>Учебный проект Help Desk</p>
+</footer>
+</body>
+</html>

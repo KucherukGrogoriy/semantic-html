@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Обращение №101 — Help Desk</title>
+</head>
+<body>
+<a href="#main-content">Перейти к основному содержимому</a>
+
+<header>
+    <img src="assets/images/help-desk.svg"
+         alt="Логотип службы поддержки Help Desk"
+         width="32" height="32">
+    <p><strong>Help Desk</strong></p>
+</header>
+
+<nav aria-label="Основная навигация">
+    <ul>
+        <li><a href="index.html">Обращения</a></li>
+        <li><a href="create-ticket.html">Создать обращение</a></li>
+    </ul>
+</nav>
+
+<nav aria-label="Путь навигации">
+    <ol>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="index.html">Обращения</a></li>
+        <li aria-current="page">Обращение №101</li>
+    </ol>
+</nav>
+
+<main id="main-content">
+    <h1>Обращение №101: Не открывается личный кабинет</h1>
+
+    <section aria-labelledby="ticket-info-heading">
+        <h2 id="ticket-info-heading">Информация об обращении</h2>
+        <p><strong>Статус:</strong> В работе</p>
+        <p><strong>Категория:</strong> Доступ</p>
+        <p><strong>Создано:</strong> <time datetime="2026-09-25">25 сентября 2026</time></p>
+        <p><strong>Описание:</strong> После входа отображается пустая страница.</p>
+    </section>
+
+    <section aria-labelledby="history-heading">
+        <h2 id="history-heading">История статусов</h2>
+
+        <table>
+            <caption>История изменений статуса обращения №101</caption>
+
+            <thead>
+            <tr>
+                <th scope="col">Дата</th>
+                <th scope="col">Статус</th>
+                <th scope="col">Специалист</th>
+                <th scope="col">Комментарий</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <th scope="row"><time datetime="2026-09-25">25.09.2026</time></th>
+                <td>Новое</td>
+                <td>—</td>
+                <td>Обращение создано пользователем</td>
+            </tr>
+            <tr>
+                <th scope="row"><time datetime="2026-09-26">26.09.2026</time></th>
+                <td>В работе</td>
+                <td>Иванов И.</td>
+                <td>Назначен специалист</td>
+            </tr>
+            <tr>
+                <th scope="row"><time datetime="2026-09-28">28.09.2026</time></th>
+                <td>Ожидает ответа</td>
+                <td>Иванов И.</td>
+                <td>Отправлен запрос пользователю</td>
+            </tr>
+            <tr>
+                <th scope="row"><time datetime="2026-09-30">30.09.2026</time></th>
+                <td>Решено</td>
+                <td>Иванов И.</td>
+                <td>Проблема устранена</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <p><a href="index.html">← Вернуться к списку обращений</a></p>
+</main>
+
+<footer>
+    <p>Учебный проект Help Desk</p>
+</footer>
+</body>
+</html>
